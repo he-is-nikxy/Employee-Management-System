@@ -1,0 +1,250 @@
+#main {
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 1rem;
+}
+
+
+/* Header */
+
+.upper {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vh;
+    /* padding: 1rem; */
+}
+
+.upper>button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #395591;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Form  */
+
+#mainTaskForm {
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    /* padding: 1rem; */
+}
+
+#taskFormContainer {
+    background-color: white;
+    color: #395591;
+    /* color: #ffffff; */
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+
+#taskFormContainer>h2 {
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 5vh;
+}
+
+#taskForm {
+    /* border: 2px solid black; */
+    margin-top: 2vh;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#taskForm>div {
+    /* background-color: rgb(52, 91, 78); */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2vh;
+}
+
+#taskForm>div>div {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    /* justify-content: center; */
+    /* height: 20vh; */
+}
+
+#taskForm>div>div>h3 {
+    margin-bottom: 1vh;
+    font-size: 3vh;
+}
+
+#taskForm>div>div>input {
+    padding: 1vh;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    /* background-color: white; */
+    color: rgb(0, 0, 0);
+    height: 3vh;
+    font-size: 2vh;
+}
+
+#taskForm>div>div>input::placeholder {
+    color: black;
+}
+
+#taskForm>div>div>input[type=date] {
+    color: rgb(0, 0, 0);
+}
+
+#taskForm>div>div>select {
+    padding: 1vh;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 5vh;
+    font-size: 2vh;
+    border: 1px solid black;
+}
+
+#taskForm>div>div>textarea {
+    padding: 1vh;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    resize: vertical;
+    height: 50vh;
+    font-size: 2vh;
+    border: 1px solid black;
+}
+
+#taskForm>div>div>textarea::placeholder {
+    color: black;
+}
+
+#taskForm>div>div>button {
+    padding: 1vh;
+    border: none;
+    border-radius: 5px;
+    background-color: #395591;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+#taskForm>div>div>button:hover {
+    letter-spacing: 1px;
+    transition: all ease 0.2s;
+}
+
+
+
+
+
+/* All Tasks Assigned */
+
+#allTasks {
+    margin-top: 5vh;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* padding: 2vh; */
+    overflow: hidden;
+    gap: 2vh;
+    /* background-color: #723333; */
+    cursor: pointer;
+}
+
+#allTasks>div {
+    color: #395591;
+    width: 95%;
+    border: 1px solid #395591;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vh;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+/* Table  */
+
+#mainTaskTable {
+    margin-top: 5vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* background-color: #ffffff; */
+}
+
+#taskTable {
+    width: 80%;
+    /* border: 2px solid blue; */
+    margin: 2vh;
+    text-align: center;
+}
+
+#taskTable > thead > tr > th {
+    width: 15%;
+    font-size: large;
+    background-color: #395591;
+    color: white;
+    padding: 1vw;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#taskTable > tbody > tr > td {
+    width: 15%;
+    font-size: large;
+    padding: 1vw;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #395591;
+    background-color: #ffffff;
+}
